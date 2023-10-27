@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* icreik padding dahil 100 oraninda sayfaya uygulanacak */
+      header,
+      footer {
+        background-color: #3d30a2;
+        color: #ffa33c;
+        padding: 15px;
+      }
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+      .menu {
+        width: 25%;
+        background-color: #0174be;
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #7752fe;
+        color: white;
+      }
+      .menu li:hover {
+        cursor: pointer;
+        background-color: beige;
+      }
+      .content {
+        width: 75%;
+      }
+      .clearfix ::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>header</h2>
+    </header>
+    <main class="clearfix">
+      <div class="menu col">
+        <ul>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+
+      <div class="content col">
+        <h2>Komple Web Gelistirme Egitimi</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          provident eos consequatur quidem nostrum neque dolore fuga, est
+          eligendi vel sequi accusantium porro qui culpa dolorem perspiciatis,
+          ea dolores quo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+          natus repellat veritatis sint nisi magnam sapiente laborum porro
+          maxime quasi blanditiis, obcaecati facilis ducimus fugiat, asperiores
+          repudiandae explicabo reiciendis quaerat?
+        </p>
+      </div>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>
